@@ -1,0 +1,47 @@
+<span style="font-size: medium; font-weight: 600;">Add Contact Details</span>
+<div class="container">
+    <table class="table table-striped table-warning table-hover">
+        <tr>Firstname</tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.firstName">
+        </tr>
+        <tr>LastName </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.lastName">
+        </tr>
+        <tr>Gender </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.gender">
+        </tr>
+        <tr>DOB </tr>
+        <tr>
+            <input type="text">
+        </tr>
+        <tr>Email </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.email">
+        </tr>
+        <tr>Phone </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.phone">
+        </tr>
+        <tr>City </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.city">
+        </tr>
+        <tr>State </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.state">
+        </tr>
+        <tr>Country </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.country">
+        </tr>
+        <tr>PictureURL </tr>
+        <tr>
+            <input type="text" [(ngModel)]="contact.picture">
+        </tr>
+
+        <button class="btn btn m-3 btn-warning" on-click="AddContact()">Add Contact</button>
+    </table>
+</div>

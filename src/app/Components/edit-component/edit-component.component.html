@@ -1,0 +1,47 @@
+<span style="font-size: medium; font-weight: 600;">Add Contact Details</span>
+<div class="container">
+    <table class="table table-striped table-warning table-hover">
+        <tr>Firstname</tr>
+        <tr>
+            <input [value]="contact.firstName" type="text" [(ngModel)]="contact.firstName">
+        </tr>
+        <tr>LastName </tr>
+        <tr>
+            <input  [value]="contact.lastName" type="text" [(ngModel)]="contact.lastName">
+        </tr>
+        <tr>Gender </tr>
+        <tr>
+            <input  [value]="contact.Gender" type="text" [(ngModel)]="contact.gender">
+        </tr>
+        <tr>DOB </tr>
+        <tr>
+            <input  [value]="contact.dob" type="text">
+        </tr>
+        <tr>Email </tr>
+        <tr>
+            <input  [value]="contact.email" type="text" [(ngModel)]="contact.email">
+        </tr>
+        <tr>Phone </tr>
+        <tr>
+            <input [value]="contact.phone" type="text" [(ngModel)]="contact.phone">
+        </tr>
+        <tr>City </tr>
+        <tr>
+            <input [value]="contact.city" type="text" [(ngModel)]="contact.city">
+        </tr>
+        <tr>State </tr>
+        <tr>
+            <input [value]="contact.state" type="text" [(ngModel)]="contact.state">
+        </tr>
+        <tr>Country </tr>
+        <tr>
+            <input [value]="contact.country" type="text" [(ngModel)]="contact.country">
+        </tr>
+        <tr>PictureURL </tr>
+        <tr>
+            <input [value]="contact.picture" type="text" [(ngModel)]="contact.picture">
+        </tr>
+
+        <button class="btn btn m-3 btn-success" on-click="UpdateContact()">Save Details</button>
+    </table>
+</div>

@@ -1,0 +1,62 @@
+<div class="container">
+    <span style="font-weight: 500;">Welcome to Phone Book Application developed in Angular 16</span>
+    
+    <img style="margin: 3px; border-radius: 2%;" [src]="owner.picture" alt="" width="30%"[border]="3">
+    <hr>
+    <span style="font-size: small; font-weight: 600;">
+        Developed by Kunal Barua
+    </span>
+    <table style="font-size: x-small; margin: 3px;" class="">
+        <tr >
+            <td>Id  </td>
+            <td>{{owner.id}}</td>
+        </tr>
+        <tr>
+            <td>First name &nbsp; &nbsp;</td>
+            <td>{{owner.firstName}}</td>
+        </tr>
+        <tr>
+            <td>Last name   </td>
+            <td>{{owner.lastName}}</td>
+        </tr>
+        <tr>
+            <td>Gender   </td>
+            <td>{{owner.gender}}</td>
+        </tr>
+        <tr>
+            <td>DOB   </td>
+            <td>{{owner.dob}}</td>
+        </tr>
+        <tr>
+            <td>Email   </td>
+            <td>{{owner.email}}</td>
+        </tr>
+        <tr>
+            <td>Phone   </td>
+            <td>{{owner.phone}}</td>
+        </tr>
+        <tr>
+            <td>City   </td>
+            <td>{{owner.city}}</td>
+        </tr>
+        <tr>
+            <td>State   </td>
+            <td>{{owner.state}}</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>{{owner.country}}</td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="btn btn-sm btn-success" disabled>Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-sm btn-danger" disabled>Delete</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
